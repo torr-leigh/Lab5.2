@@ -281,19 +281,18 @@ L.geoJson('data/hs_ws_count.geojson', {style: style3}).addTo(map2);
 var legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function (map2) {
-
-    var div = L.DomUtil.create('div', 'info legend'),
+    var div2 = L.DomUtil.create('div', 'info legend'),
         grades = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++) {
-        div.innerHTML +=
+        div2.innerHTML +=
             '<i style="background:' + getColor2(grades[i] + 1) + '"></i> ' +
             grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
     }
 
-    return div;
+    return div2;
 };
 
-legend.addTo(map);
+legend.addTo(map2);

@@ -28,10 +28,13 @@ p{
 
 }
 
-
 .legend {
   line-height: 18px;
-  color: #555;
+  color: #f3efef;
+  background: rgb(24, 23, 23);
+  padding: 6px 8px;
+  box-shadow: 0 0 15px rgba(249, 247, 247, 0.2);
+  border-radius: 5px;
 }
 .legend i {
   width: 18px;
